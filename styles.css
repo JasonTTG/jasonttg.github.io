@@ -179,3 +179,21 @@ footer p {
     gap: 4px;
   }
 }
+
+/* Optional project media: images, GIFs, and videos */
+.project-media {
+  margin: 18px 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #0d0d0d;
+}
+
+.project-media img,
+.project-media video {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  background: #0d0d0d;
+}

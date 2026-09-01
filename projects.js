@@ -1,50 +1,41 @@
-// Add new projects by copying one object below.
-// The homepage will render them automatically.
 const PROJECTS = [
   {
-    title: "Combat Systems Prototype",
+    title: "Metro Mayhem",
     type: "Gameplay Programming",
-    year: "2026",
-    description: "A modular third-person combat prototype focused on responsive controls and reusable gameplay architecture.",
-    highlights: [
-      "Designed reusable attacks and abilities.",
-      "Integrated animation, hit detection, damage events, and input buffering.",
-      "Built debugging tools for combat state and gameplay tuning."
-    ],
-    tags: ["C++", "Unreal Engine", "Gameplay Systems"],
-    links: [
-      { label: "GitHub", url: "https://github.com/YOUR_USERNAME" },
-      { label: "Demo", url: "#" }
-    ]
-  },
-  {
-    title: "Enemy AI Sandbox",
-    type: "AI Programming",
-    year: "2026",
-    description: "A reusable enemy AI framework for perception, navigation, combat decisions, and state transitions.",
-    highlights: [
-      "Implemented perception-driven target acquisition.",
-      "Separated decision logic from movement and combat behavior.",
-      "Added visual debugging for awareness and state changes."
-    ],
-    tags: ["C++", "AI", "Behavior Trees"],
-    links: [
-      { label: "GitHub", url: "https://github.com/YOUR_USERNAME" }
-    ]
-  },
-  {
-    title: "Level Design Tool",
-    type: "Tools Programming",
     year: "2025",
-    description: "An editor tool that speeds up content placement and reduces repetitive scene setup.",
+    media: {
+      type: "image",
+      src: "assets/projects/MetroMayhem.gif"
+    },
+    description: "A game based on the web version of Mini Metro. Created for the class CSCI C-292 at Indiana University.",
     highlights: [
-      "Automated repetitive scene setup and configuration.",
-      "Added validation checks for common content errors.",
-      "Designed the tool for use by non-programmers."
+      "Coded in passenger routing logic, taking the fastest path to their destination.",
+      "Implemented clean train movement and line creation."
     ],
-    tags: ["C#", "Unity", "Editor Tools"],
+    tags: ["C#", "Unity", "Gameplay Systems"],
     links: [
-      { label: "GitHub", url: "https://github.com/YOUR_USERNAME" }
+      { label: "GitHub", url: "https://github.com/JasonTTG/metro-mayhem" },
+      { label: "Itch.io", url: "https://jasonhoffman.itch.io/metro-mayhem" }
     ]
-  }
+  },
+  
+  {
+    title: "POCUS Carnival",
+    type: "Programming Lead",
+    year: "2026",
+    media: {
+      type: "image",
+      src: "assets/projects/POCUSCarnival.gif"
+    },
+    description: "Mobile game developed for the Indiana University School of Medicine.",
+    highlights: [
+      "Restructured the game's architecture to allow for multiple game modes.",
+      "Implemented database integration for research purposes."
+    ],
+    tags: ["C#", "Unity", "SQL", "Mobile Development"],
+    links: [
+      { label: "App Store", url: "https://apps.apple.com/us/app/pocus-carnival/id6720748738" },
+      { label: "Google Play Store", url: "https://apps.apple.com/us/app/pocus-carnival/id6720748738" }
+    ]
+  },
 ];
