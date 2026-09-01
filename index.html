@@ -3,133 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Game programmer portfolio featuring gameplay systems, tools, engine work, and technical projects." />
-  <title>Game Programmer Portfolio</title>
+  <meta name="description" content="Game programmer portfolio." />
+  <title>YOUR NAME | Game Programmer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Home">YOUR NAME<span>.</span></a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero shell">
-      <p class="eyebrow">GAME PROGRAMMER</p>
-      <h1>I build responsive gameplay systems, tools, and technical experiences.</h1>
-      <p class="hero-copy">
-        Gameplay programmer focused on clean systems, strong game feel, and maintainable code.
-        Replace this with a short summary of the kind of programming work you want to be hired for.
+  <main class="container">
+    <header class="intro">
+      <p class="role">Game Programmer</p>
+      <h1>YOUR NAME</h1>
+      <p class="summary">
+        I build gameplay systems, tools, and technical game features.
       </p>
-      <div class="hero-actions">
-        <a class="button primary" href="#projects">View projects</a>
-        <a class="button" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="button" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-      </div>
-      <div class="hero-meta">
-        <span>Gameplay Systems</span>
-        <span>AI</span>
-        <span>Tools</span>
-        <span>Engine Programming</span>
-      </div>
-    </section>
 
-    <section id="projects" class="section shell">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">SELECTED WORK</p>
-          <h2>Projects</h2>
-        </div>
-        <p>Projects are generated from <code>projects.js</code>, so this section scales without duplicating HTML.</p>
-      </div>
-      <div id="project-grid" class="project-grid" aria-live="polite"></div>
-    </section>
-
-    <section id="skills" class="section shell">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">TECHNICAL TOOLKIT</p>
-          <h2>Skills</h2>
-        </div>
-      </div>
-      <div class="skills-grid">
-        <article class="skill-card">
-          <h3>Languages</h3>
-          <p>C++, C#, Python, JavaScript</p>
-        </article>
-        <article class="skill-card">
-          <h3>Engines & APIs</h3>
-          <p>Unreal Engine, Unity, Godot, OpenGL</p>
-        </article>
-        <article class="skill-card">
-          <h3>Game Programming</h3>
-          <p>Gameplay systems, AI, animation integration, physics, networking, tools</p>
-        </article>
-        <article class="skill-card">
-          <h3>Workflow</h3>
-          <p>Git, GitHub, profiling, debugging, data-driven design, technical documentation</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section shell two-column">
-      <div>
-        <p class="eyebrow">ABOUT</p>
-        <h2>About me</h2>
-      </div>
-      <div class="prose">
-        <p>
-          Write 2–3 concise paragraphs here about your programming interests, the kinds of problems you enjoy solving,
-          and what kind of game programming role you are looking for.
-        </p>
-        <p>
-          Keep this section technical and specific. Mention collaboration with designers/artists, debugging difficult systems,
-          performance work, or the areas of game development you want to specialize in.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact" class="section shell contact-panel">
-      <div>
-        <p class="eyebrow">CONTACT</p>
-        <h2>Let’s build something fun.</h2>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:you@example.com">you@example.com</a>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
         <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="project-list" class="project-list"></div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div>
+          <h3>Languages</h3>
+          <p>C++, C#, Python, JavaScript</p>
+        </div>
+        <div>
+          <h3>Engines & Tools</h3>
+          <p>Unreal Engine, Unity, Godot, Git, GitHub</p>
+        </div>
+        <div>
+          <h3>Game Programming</h3>
+          <p>Gameplay systems, AI, animation, physics, tools, debugging</p>
+        </div>
       </div>
     </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">github.com/YOUR_USERNAME</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer">linkedin.com/in/YOUR_USERNAME</a></p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> YOUR NAME</p>
+    </footer>
   </main>
 
-  <footer class="site-footer shell">
-    <span>© <span id="year"></span> YOUR NAME</span>
-    <span>Built for GitHub Pages</span>
-  </footer>
-
-  <template id="project-card-template">
-    <article class="project-card">
-      <a class="project-media" target="_blank" rel="noreferrer">
-        <img loading="lazy" alt="" />
-      </a>
-      <div class="project-body">
-        <div class="project-topline">
-          <div>
-            <p class="project-kicker"></p>
-            <h3 class="project-title"></h3>
-          </div>
-          <span class="project-year"></span>
+  <template id="project-template">
+    <article class="project">
+      <div class="project-heading">
+        <div>
+          <h3 class="project-title"></h3>
+          <p class="project-meta"></p>
         </div>
-        <p class="project-description"></p>
-        <ul class="project-highlights"></ul>
-        <div class="project-tags"></div>
-        <div class="project-links"></div>
+        <span class="project-year"></span>
       </div>
+      <p class="project-description"></p>
+      <ul class="project-highlights"></ul>
+      <p class="project-tags"></p>
+      <div class="project-links"></div>
     </article>
   </template>
 
